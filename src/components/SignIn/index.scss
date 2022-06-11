@@ -1,0 +1,17 @@
+.Signin {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-repeat: none;
+  background-size: cover;
+  background-image: linear-gradient(
+    rgb(255, 255, 255) 0%,
+    rgb(254, 254, 254) 24%,
+    rgb(255, 255, 255) 49%,
+    rgb(89, 170, 228) 75%,
+    rgb(82, 170, 241) 100%
+  );
+  opacity: 1;
+}

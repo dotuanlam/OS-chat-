@@ -1,0 +1,56 @@
+.container-chatbox {
+  position: relative;
+  .container-message {
+    padding: 1rem;
+    background-color: #eee;
+    height: -webkit-fill-available;
+    min-height: 100vh;
+    overflow-y: hidden;
+    padding-top: 7.5rem;
+    scroll-behavior: smooth;
+    padding-bottom: 3.5rem;
+  }
+  .container-chatbox__message-other {
+    border-radius: 1rem;
+    padding: 0.3rem 1rem;
+    background-color: #40a9ff;
+    position: relative;
+    max-width: 100%;
+    width: fit-content;
+    .ant-typography {
+      overflow-wrap: anywhere;
+      width: -webkit-fill-available;
+    }
+    .arrow {
+      position: absolute;
+      width: 1rem;
+      height: 1rem;
+      z-index: 11;
+      background-color: #40a9ff;
+      left: 0;
+      top: 0rem;
+    }
+  }
+  .container-chatbox__message-mine {
+    border-radius: 1rem;
+    padding: 0.3rem 1rem;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    margin-left: auto;
+    width: fit-content;
+    max-width: 100%;
+    .ant-typography {
+      overflow-wrap: anywhere;
+      width: -webkit-fill-available;
+    }
+    .arrow {
+      position: absolute;
+      width: 1rem;
+      height: 1rem;
+      z-index: 11;
+      background-color: rgb(255, 255, 255);
+      right: 0;
+      top: 0rem;
+    }
+  }
+}

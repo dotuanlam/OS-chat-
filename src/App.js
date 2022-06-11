@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import ChatRoom from "./components/ChatRoom/index";
+import SignIn from "./components/SignIn/index";
+import PrivateRoute from "./components/PrivateRoute";
+import { Route, Routes } from "react-router-dom";
+import PageNotFound from "./pages/NotFound";
+import UsersAtRoom from "./components/ChatRoom/UsersAtRoom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route element={<PrivateRoute />}>
+          <Route exact path="/" element={<ChatRoom />} />
+        </Route>
+        <Route exact path="/login" element={<SignIn />} />
+        <Route exact path="/test" element={<UsersAtRoom />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
     </div>
   );
 }
