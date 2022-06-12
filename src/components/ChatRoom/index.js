@@ -212,7 +212,6 @@ const ChatRoom = () => {
         <SendMessage scroll={scroll} />
       </Row>
       <div ref={scroll}>
-        {" "}
         {showUserSAtRoom && (
           <UsersAtRoom setShowUserSAtRoom={setShowUserSAtRoom} />
         )}

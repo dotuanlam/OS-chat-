@@ -29,7 +29,6 @@ const Signin = () => {
               displayName: displayName,
               photoURL: photoURL,
             });
-            console.log(details);
           }
           navigate("/");
           return;
